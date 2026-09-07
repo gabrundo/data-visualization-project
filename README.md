@@ -79,6 +79,96 @@ GROUP BY s.id, ids.external_id, p.name, t.name
 ORDER BY p.name;
 ```
 
+## Collect historical matchday data
+
+The historical scraper imports all players and fixtures for **2023–24,
+2024–25, and 2025–26** from Fantacalcio.it (38 matchdays per season).
+It uses **Redazione Fantacalcio** for both Voto and published Fanta Voto.
+Current-season collection is not part of the default run.
+
+Install dependencies and validate a small sample without connecting to PostgreSQL:
+
+```bash
+uv sync
+uv run python -m project.etl.scrape_seasons --seasons 2023 2024 2025 --matchdays 1 --dry-run
+```
+
+With PostgreSQL running and a backup saved, collect and import all three seasons:
+
+```bash
+uv run python -m project.etl.scrape_seasons
+```
+
+Options:
+
+| Option | Behavior |
+| --- | --- |
+| `--seasons 2023 2024 2025` | Season start years; these are the defaults |
+| `--matchdays 1 2 38` | Explicit matchdays; defaults to 1–38 |
+| `--dry-run` | Download/cache and validate; no database connection or writes |
+| `--refresh` | Fetch new HTML and reconcile even previously imported pages |
+| `--cache-dir PATH` | Override `data/cache/fantacalcio` |
+| `--env-file PATH` | Override the project `.env`; environment variables take precedence |
+
+Run the same command again after an interruption. Valid cached HTML is reused;
+successfully imported batches from the same parser version are skipped. Failed
+or incomplete pages are fetched again. Each request has a 30-second timeout;
+downloads are sequential, at least two seconds apart, with up to three attempts
+for connection errors, timeouts, HTTP 429, and HTTP 5xx. Longer `Retry-After`
+delays are honored. Redirects and unexpected season/matchday selections fail
+validation.
+
+Original HTML is stored by checksum under `<cache>/<season>/<matchday>/` with
+a `latest.json` manifest recording its URL and retrieval time. These files and
+`<cache>/coverage.json` are ignored by Git; back them up with PostgreSQL. The
+coverage report describes the latest command's requested matchdays, fixture and
+performance counts, unresolved pages, and any canonical/historical name
+differences encountered during imports. An incomplete run exits with status 1;
+an interrupted run exits with status 130. A sample run reports sample coverage,
+not completeness of an entire season.
+
+Each validated matchday is imported in one transaction. Incomplete pages cannot
+replace earlier validated performances. Failed/incomplete collection attempts
+remain in `collection_record`, and their downloaded HTML remains cached. A
+refreshed complete page updates existing observations and removes rows that the
+source no longer publishes for those fixtures and that provider.
+
+Players are linked by Fantacalcio ID, including players outside the current
+auction list. The scraper creates missing historical identities but preserves
+existing canonical names and current eligibility snapshots. Teams are matched
+by trimmed, case-insensitive canonical names; fixture teams retain transfers.
+Source names and Classic roles stay in raw values; historical Classic roles
+are not converted into Mantra eligibility.
+
+Source rating codes `55` and `56` are treated as unrated, with null Voto/Fanta
+Voto; raw tokens are retained. Missing values remain null and event zeroes
+remain zero. Cards use the selected provider's `yellow-card`/`red-card` flags;
+a red flag alone does not reveal an earlier yellow or a second-yellow dismissal.
+Dates use `Europe/Rome`. Minutes, starting status, and actual appearance remain
+null because their semantics have not been verified. Absence from a page does
+not establish non-participation. Published Fanta Voto is never recomputed or
+given additional bonuses; goal/penalty categories and extra events such as
+Player of the Match are retained without assumed scoring weights.
+
+Run the offline tests:
+
+```bash
+uv run python -m unittest discover -s tests -v
+```
+
+To also test imports, rollback, and reruns against local PostgreSQL:
+
+```bash
+HISTORICAL_DB_TESTS=1 uv run python -m unittest discover -s tests -v
+```
+
+Integration tests create and remove their own temporary database schemas.
+Historical aggregate Excel reconciliation is deferred until those workbooks
+are available locally.
+
+See [historical collection validation](db/historical-collection.md) for the
+completed three-season dataset counts and checks on the original player data.
+
 ## Persistence
 
 The named Docker volume `fantacalcio_postgres_data` retains data when the

@@ -55,3 +55,9 @@ or repeated home/away pairings would require extending it.
 `001_schema.sql` is the authoritative initial schema. The existing Python
 `src/project/db/models.py` is an unfinished scaffold and is not used by this
 setup. ORM mappings and collection pipelines can be added against this schema.
+
+## Connect to DB via shell
+
+```bash
+docker compose exec db sh -c 'psql -U fantacalcio -d fantacalcio'
+```
