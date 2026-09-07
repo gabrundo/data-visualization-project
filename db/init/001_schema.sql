@@ -11,7 +11,7 @@ CREATE TABLE collection_record (
     source_id bigint NOT NULL REFERENCES data_source,
     source_uri text NOT NULL,
     retrieved_at timestamptz NOT NULL DEFAULT now(),
-    content_sha256 text,c
+    content_sha256 text,
     cached_file text,
     requested_season smallint,
     requested_matchday smallint CHECK (requested_matchday > 0),
@@ -59,7 +59,7 @@ CREATE TABLE player_season_snapshot (
 
 CREATE TABLE player_snapshot_role (
     snapshot_id bigint NOT NULL REFERENCES player_season_snapshot ON DELETE CASCADE,
-    role text NOT NULL CHECK (role IN ('Por', 'Dc', 'Ds', 'Dd', 'E', 'M', 'C', 'W', 'T', 'A', 'Pc')),
+    role text NOT NULL CHECK (role IN ('Por', 'Dc', 'Ds', 'Dd', 'E', 'M', 'C', 'W', 'T', 'A', 'Pc', 'B')),
     PRIMARY KEY (snapshot_id, role)
 );
 
