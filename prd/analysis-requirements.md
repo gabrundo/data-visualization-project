@@ -6,10 +6,18 @@ Help the user choose auction targets for each Mantra role in an eight-manager le
 
 ## Player metrics
 
+The proposed table layout, metric definitions, position filters, and candidate
+comparison rules are detailed in [position metrics](position-metrics.md).
+The implemented views and explicit 38-game contribution/card weighting are
+documented in [statistics access](../db/player-metrics.md). These ranking
+preferences do not estimate actual appearance probability or future scores.
+Prediction and pricing are deferred to the separate
+[score-forecasting design](score-forecasting.md); its parameters remain unchosen.
+
 | Metric | Intended interpretation |
 | --- | --- |
 | Mean and median Fanta Voto | Average and typical fantasy performance |
-| Standard deviation of Fanta Voto | Match-to-match variability |
+| Fanta Voto P10, P25, P50, P75, P90 | Lower, typical, and higher observed returns |
 | Rated appearances | Number of fixtures with a valid rating |
 | Actual appearances, if observable | Participation, including appearances without a rating |
 | Appearance/rated-appearance rate | Frequency of contribution, with an explicitly defined eligible-fixture denominator |
@@ -18,7 +26,7 @@ Help the user choose auction targets for each Mantra role in an eight-manager le
 | Event totals and per-appearance rates | Sources of bonuses and penalties |
 | Season-by-season trends | Change and persistence across seasons |
 
-Standard deviation must be reported with mean performance and sample size. Low variation alone does not indicate a good target. Use rated observations for rating statistics and document the standard-deviation convention; fewer than two observations cannot support a sample standard deviation.
+Report FV percentiles with mean performance, threshold frequencies, and valid FV sample size. Use continuous interpolation within each player and season; these are not percentile ranks among players. Missing FV values are excluded, an empty sample yields NULL, and a single observation yields that value at every percentile while remaining unranked. Percentiles describe the observed distribution, not guaranteed floors or ceilings. Standard deviation and its ranking penalty are removed because high positive returns also increase it.
 
 Missing seasons are missing history, not zero performance. Keep newcomers visible and clearly distinguish limited evidence from poor performance. Do not infer injury history or reasons for absence from missing ratings alone.
 

@@ -169,6 +169,27 @@ are available locally.
 See [historical collection validation](db/historical-collection.md) for the
 completed three-season dataset counts and checks on the original player data.
 
+## Player statistics by role and formation position
+
+Statistics views select players eligible in the latest validated 2026–27
+snapshots and summarize each performance season separately. They include raw
+ratings/events, FV percentiles, 38-game contribution weighting, and
+an explicit card-risk preference for defensive and central-midfield roles.
+
+For an existing database, install the views:
+
+```bash
+docker compose exec -T db sh -c 'psql -v ON_ERROR_STOP=1 -U "$POSTGRES_USER" -d "$POSTGRES_DB"' < db/init/002_player_metrics.sql
+```
+
+For example, query `position_m_c_statistics` with `performance_season = 2025`
+and order by `candidate_score DESC NULLS LAST`. Single-game and no-history
+players remain visible but unranked. Scores describe the observed season, not
+future availability or auction prices.
+
+See [statistics access and weighting](db/player-metrics.md) for copyable queries,
+all role/position view names, exact formulas, sample sizes, and coverage limits.
+
 ## Persistence
 
 The named Docker volume `fantacalcio_postgres_data` retains data when the

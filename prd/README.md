@@ -85,4 +85,4 @@ The immediate scope is data collection and auction-oriented player analysis. A p
 - Complete official formation eligibility and substitution rules if formation analysis is implemented.
 - Availability of minutes played and reliable appearance status in the selected source.
 
-See [data requirements](data-requirements.md) and [analysis requirements](analysis-requirements.md) for the proposed implementation requirements. These documents record requirements and findings; they do not imply that collection or analysis has already been implemented.
+See [data requirements](data-requirements.md) and [analysis requirements](analysis-requirements.md) for the proposed implementation requirements. The next analysis design is detailed in [position metrics and candidate comparison](position-metrics.md). Future prediction and pricing ideas are recorded separately in [score forecasting and auction valuation](score-forecasting.md). These documents record requirements and findings; they do not imply that collection or analysis has already been implemented.
