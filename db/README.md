@@ -56,6 +56,13 @@ or repeated home/away pairings would require extending it.
 `src/project/db/models.py` is an unfinished scaffold and is not used by this
 setup. ORM mappings and collection pipelines can be added against this schema.
 
+## Statistics views
+
+[Player statistics access and weighting](player-metrics.md) documents the
+implemented role and 4-2-3-1 position views, their explicit 38-game and card-risk
+preferences, and installation on existing databases. The views select current
+eligibility while keeping historical performance seasons separate.
+
 ## Connect to DB via shell
 
 ```bash
