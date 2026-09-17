@@ -190,6 +190,40 @@ future availability or auction prices.
 See [statistics access and weighting](db/player-metrics.md) for copyable queries,
 all role/position view names, exact formulas, sample sizes, and coverage limits.
 
+## E-role comparison
+
+Open [the E-role comparison notebook](notebook/e-role-comparison.ipynb) for the
+parameterized extraction SQL, player samples, raw group averages, and a
+Matplotlib radar chart. It compares E with Ds/Dd against E without Ds/Dd using
+2025–26 performance and an inclusive 30% rated-season coverage filter.
+Consistency is the share of valid FV scores at least 6. Radar axes show mean
+player percentile ranks within the filtered E pool, with card rates reversed.
+
+## Outfield comparisons
+
+Open [the outfield comparison notebook](notebook/outfield-comparison.ipynb) for
+the extraction SQL, six scatterplots, and complete candidate tables: Dc/B,
+Dd/Ds/E, M, C, W/T/A, and Pc. Defaults are 2025–26 performance and rated-season
+coverage ≥30%, with current eligibility. Each multi-role player appears once
+per qualifying group. Colors identify full role combinations; labels identify
+the ten highest-mean-FV players per group. Each plot's vertical axis fits its
+group's mean fantasy-vote range; coverage axis limits remain shared.
+The notebook saves PNGs in `img/outfield-comparison/`.
+
+```python
+from project.analysis.queries import connect_database, fetch_group_metrics
+
+engine = connect_database()
+try:
+    players = fetch_group_metrics(engine, performance_season=2025,
+                                  min_rated_season_fraction=0.30)
+finally:
+    engine.dispose()
+```
+
+Rated coverage is an observed contribution proxy, not injury risk. These are
+historical comparison pools, not performance tiers or auction valuations.
+
 ## Persistence
 
 The named Docker volume `fantacalcio_postgres_data` retains data when the
