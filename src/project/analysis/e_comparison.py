@@ -1,6 +1,6 @@
-"""Equal-player E-group comparison with grouped bars of raw metric means.
+"""Equal-player E-group comparison with bars and a spider chart of raw means.
 
-Run the existing parameterized SQL query and display the grouped bar chart with::
+Run the existing parameterized SQL query and display the comparison with::
 
     uv run python -m project.analysis.e_comparison
 
@@ -34,6 +34,11 @@ METRICS = {
 }
 GROUPS = ["Defensive E", "Other E"]
 GROUP_LABELS = {"Defensive E": "Defensive E", "Other E": "Offensive E"}
+SPIDER_METRICS = {
+    "goals_per_match": "Goals / match",
+    "assists_per_match": "Assists / match",
+    "card_rate": "Matches with a card / match",
+}
 
 
 def plot_e_comparison(players: pd.DataFrame):
@@ -57,22 +62,36 @@ def plot_e_comparison(players: pd.DataFrame):
     counts = grouped.count().reindex(GROUPS)
     if (counts == 0).any().any():
         raise ValueError("A group has no observations for at least one metric; inspect samples.")
-    positions = np.arange(len(METRICS))
+    bar_metrics = {metric: label for metric, label in METRICS.items()
+                   if metric not in SPIDER_METRICS}
+    positions = np.arange(len(bar_metrics))
     bar_width = 0.36
-    fig, ax = plt.subplots(figsize=(12, 7))
+    fig = plt.figure(figsize=(14, 7))
+    layout = fig.add_gridspec(1, 2, width_ratios=[1.4, 1], wspace=0.45)
+    ax = fig.add_subplot(layout[0, 0])
+    spider = fig.add_subplot(layout[0, 1], projection="polar")
     fig.set_facecolor("white")
     ax.set_facecolor("white")
+    spider.set_facecolor("white")
+    angles = np.linspace(0, 2 * np.pi, len(SPIDER_METRICS), endpoint=False)
+    closed_angles = np.r_[angles, angles[0]]
     sizes = players.groupby("role_group").size()
     for index, (group, color) in enumerate(zip(GROUPS, ["#1f77b4", "#666666"])):
         bars = ax.bar(
             positions + (index - 0.5) * bar_width,
-            raw.loc[group].to_numpy(),
+            raw.loc[group, list(bar_metrics)].to_numpy(),
             width=bar_width,
             color=color,
             label=f"{GROUP_LABELS[group]} · {sizes[group]} players",
         )
         ax.bar_label(bars, fmt="%.2f", padding=4, fontsize=8, color="#444444")
-    ax.set_xticks(positions, METRICS.values(), fontsize=9, color="#444444")
+        points = raw.loc[group, list(SPIDER_METRICS)].to_numpy()
+        closed_points = np.r_[points, points[0]]
+        spider.plot(closed_angles, closed_points, color=color, linewidth=2,
+                    linestyle="-" if index == 0 else "--", marker="o", markersize=4)
+        spider.fill(closed_angles, closed_points, color=color, alpha=0.08)
+    ax.set_xticks(positions, bar_metrics.values(), fontsize=9, color="#444444")
+    ax.set_title("Performance and availability", fontsize=11, color="#444444", pad=20)
     ax.set_ylabel("Mean value", fontsize=10, color="#444444")
     ax.set_ylim(bottom=0)
     ax.margins(y=0.15)
@@ -82,6 +101,24 @@ def plot_e_comparison(players: pd.DataFrame):
     ax.spines[["top", "right", "left"]].set_visible(False)
     ax.spines["bottom"].set_color("#dddddd")
     ax.set_axisbelow(True)
+    spider.set_theta_offset(np.pi / 2)
+    spider.set_theta_direction(-1)
+    spider.set_xticks(angles, SPIDER_METRICS.values(), fontsize=9, color="#444444")
+    spider.tick_params(axis="x", pad=12)
+    # All three axes share a raw rate scale, including the unreversed card rate.
+    rate_max = raw[list(SPIDER_METRICS)].to_numpy().max()
+    radial_limit = np.ceil(rate_max * 1.15 * 20) / 20 if rate_max > 0 else 0.1
+    spider.set_ylim(0, radial_limit)
+    radial_ticks = np.linspace(0, radial_limit, 5)[1:]
+    spider.set_yticks(radial_ticks, [f"{tick:.2f}" for tick in radial_ticks],
+                     fontsize=8, color="#888888")
+    spider.set_rlabel_position(60)
+    spider.grid(color="#dddddd", linewidth=0.6)
+    spider.spines["polar"].set_visible(False)
+    spider.set_axisbelow(True)
+    spider.set_title("Metrics per match", fontsize=11, color="#444444", pad=35)
+    # spider.text(0.5, -0.18, "Lower card rate is better.", transform=spider.transAxes,
+    #             ha="center", fontsize=8, color="#777777")
     season = int(players["performance_season"].iloc[0])
     fig.text(0.08, 0.95, f"historic performance for E players, season: {season}–{str(season + 1)[-2:]}",
              fontsize=13, color="#444444")
@@ -96,7 +133,7 @@ def plot_e_comparison(players: pd.DataFrame):
     #     note += "\nWARNING: season imports are incomplete."
     # fig.text(0.5, 0.025, note, ha="center", fontsize=8, color="#777777",
     #          linespacing=1.5)
-    fig.subplots_adjust(top=0.85, bottom=0.25, left=0.08, right=0.98)
+    fig.subplots_adjust(top=0.80, bottom=0.25, left=0.06, right=0.90)
     return fig, raw, counts
 
 
