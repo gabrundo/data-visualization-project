@@ -55,7 +55,7 @@ def plot_dimarco_fv(data):
         #          "Box: middle 50% · Line: median · Whiskers: up to 1.5 × IQR · Points: outliers\n"
         #          "Dashed line: FV = 6 · n: non-null FV observations · Redazione Fantacalcio",
         #          fontsize=9, color="#475569", linespacing=1.7)
-        fig.subplots_adjust(left=0.10, right=0.97, top=0.83, bottom=0.20)
+        # fig.subplots_adjust(left=0.10, right=0.97, top=0.83, bottom=0.20)
     return fig, summary
 
 
