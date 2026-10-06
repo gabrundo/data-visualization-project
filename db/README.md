@@ -68,3 +68,10 @@ eligibility while keeping historical performance seasons separate.
 ```bash
 docker compose exec db sh -c 'psql -U fantacalcio -d fantacalcio'
 ```
+
+## Auction and dated context
+
+[The local auction app](auction-app.md) adds fantasy teams, settings, sales,
+idempotency receipts and context snapshots through `003_auction.sql`. Fantasy
+teams are separate from football clubs. See the guide for installation on an
+existing database, transaction rules, context imports and API endpoints.

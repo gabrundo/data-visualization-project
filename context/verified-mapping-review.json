@@ -1,0 +1,156 @@
+[
+  {
+    "club": "Atalanta",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Bologna",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Cagliari",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Como",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Fiorentina",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Frosinone",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Genoa",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Inter",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Juventus",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Lazio",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Lecce",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Milan",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Monza",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Napoli",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Parma",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Roma",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Sassuolo",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Torino",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Udinese",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Venezia",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Parma",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Parma",
+    "name": "Nicolussi Caviglia",
+    "player_id": 352,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  }
+]

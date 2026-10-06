@@ -1,0 +1,2473 @@
+[
+  {
+    "club": "Atalanta",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Atalanta",
+    "name": "Carnesecchi",
+    "player_id": 2,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Atalanta",
+    "name": "Bellanova",
+    "player_id": 124,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Atalanta",
+    "name": "Kristensen",
+    "player_id": 143,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Atalanta",
+    "name": "Scalvini",
+    "player_id": 84,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Atalanta",
+    "name": "Bernasconi",
+    "player_id": 125,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Atalanta",
+    "name": "Hien",
+    "player_id": 106,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Atalanta",
+    "name": "Samardzic",
+    "player_id": 269,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Atalanta",
+    "name": "Gaetano",
+    "player_id": 319,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Atalanta",
+    "name": "Ederson",
+    "player_id": 273,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Atalanta",
+    "name": "Pasalic",
+    "player_id": 308,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Atalanta",
+    "name": "Kessie",
+    "player_id": 280,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Atalanta",
+    "name": "De Ketelaere",
+    "player_id": 460,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Atalanta",
+    "name": "Scamacca",
+    "player_id": 456,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Atalanta",
+    "name": "Rowe",
+    "player_id": 289,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Atalanta",
+    "name": "Krstovic",
+    "player_id": 459,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Atalanta",
+    "name": "Raspadori",
+    "player_id": 465,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Bologna",
+    "name": "Skorupski",
+    "player_id": 9,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Pessina Mas.",
+    "player_id": 28,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Helland",
+    "player_id": 194,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Heggem",
+    "player_id": 126,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Theate",
+    "player_id": 104,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Vitik",
+    "player_id": 167,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Casale",
+    "player_id": 193,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "De Silvestri",
+    "player_id": 238,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Zortea",
+    "player_id": 108,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Pobega",
+    "player_id": 340,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Ferguson",
+    "player_id": 321,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Miranda J.",
+    "player_id": 92,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Moro",
+    "player_id": 376,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Bologna",
+    "name": "Amondarain",
+    "player_id": 362,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Alhassane",
+    "player_id": 216,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Orsolini",
+    "player_id": 257,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Cambiaghi",
+    "player_id": 310,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Dovbyk",
+    "player_id": 463,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Bernardeschi",
+    "player_id": 288,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Mbangula",
+    "player_id": 318,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Piccoli",
+    "player_id": 486,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Odgaard",
+    "player_id": 309,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Bologna",
+    "name": "Holm",
+    "player_id": 127,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Cagliari",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Cagliari",
+    "name": "Caprile",
+    "player_id": 10,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Cagliari",
+    "name": "Ze Pedro",
+    "player_id": 151,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Cagliari",
+    "name": "Mina",
+    "player_id": 109,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Cagliari",
+    "name": "Rodriguez",
+    "player_id": 168,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Cagliari",
+    "name": "Obert",
+    "player_id": 110,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Cagliari",
+    "name": "Sugawara",
+    "player_id": 149,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Cagliari",
+    "name": "Adopo",
+    "player_id": 322,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Cagliari",
+    "name": "Winks",
+    "player_id": 341,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Cagliari",
+    "name": "Romano",
+    "player_id": 323,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Cagliari",
+    "name": "Fazzini",
+    "player_id": 342,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Cagliari",
+    "name": "Fadera",
+    "player_id": 418,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Cagliari",
+    "name": "Maldini",
+    "player_id": 503,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Cagliari",
+    "name": "Kevin Carlos",
+    "player_id": 475,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Cagliari",
+    "name": "Nzola",
+    "player_id": 521,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Como",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Como",
+    "name": "Butez",
+    "player_id": 5,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Como",
+    "name": "Couto",
+    "player_id": 103,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Como",
+    "name": "Chalobah",
+    "player_id": 86,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Como",
+    "name": "Ramon",
+    "player_id": 85,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Como",
+    "name": "Valle",
+    "player_id": 129,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Como",
+    "name": "Smolcic",
+    "player_id": 169,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Como",
+    "name": "Kaiki",
+    "player_id": 128,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Como",
+    "name": "Da Cunha",
+    "player_id": 262,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Como",
+    "name": "Perrone",
+    "player_id": 290,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Como",
+    "name": "Diao",
+    "player_id": 473,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Como",
+    "name": "Paz",
+    "player_id": 254,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Como",
+    "name": "Baturina",
+    "player_id": 260,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Como",
+    "name": "Rodriguez",
+    "player_id": 282,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Como",
+    "name": "Milla",
+    "player_id": 343,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Como",
+    "name": "Kean",
+    "player_id": 452,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Como",
+    "name": "Douvikas",
+    "player_id": 454,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Fiorentina",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Fiorentina",
+    "name": "De Gea",
+    "player_id": 7,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Fiorentina",
+    "name": "Dodò",
+    "player_id": 87,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Fiorentina",
+    "name": "Dragusin",
+    "player_id": 111,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Fiorentina",
+    "name": "Viery",
+    "player_id": 130,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Fiorentina",
+    "name": "Valdepenas",
+    "player_id": 153,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Fiorentina",
+    "name": "Jimenez",
+    "player_id": 112,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Fiorentina",
+    "name": "Joao Mario",
+    "player_id": 197,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Fiorentina",
+    "name": "Pongracic",
+    "player_id": 170,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Fiorentina",
+    "name": "Ndour",
+    "player_id": 325,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Fiorentina",
+    "name": "Fagioli",
+    "player_id": 324,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Fiorentina",
+    "name": "Atta",
+    "player_id": 268,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Fiorentina",
+    "name": "Mastantuono",
+    "player_id": 286,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Fiorentina",
+    "name": "Beto",
+    "player_id": 470,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Fiorentina",
+    "name": "Goncalves",
+    "player_id": 281,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Fiorentina",
+    "name": "Pellegrino",
+    "player_id": 467,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Fiorentina",
+    "name": "Njie",
+    "player_id": 396,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Frosinone",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Frosinone",
+    "name": "Palmisani",
+    "player_id": 20,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Frosinone",
+    "name": "Oyono",
+    "player_id": 132,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Frosinone",
+    "name": "Calvani",
+    "player_id": 154,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Frosinone",
+    "name": "Monterisi",
+    "player_id": 131,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Frosinone",
+    "name": "Bracaglia",
+    "player_id": 113,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Frosinone",
+    "name": "Tchato",
+    "player_id": 213,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Frosinone",
+    "name": "Terzic",
+    "player_id": 189,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Frosinone",
+    "name": "Grillitsch",
+    "player_id": 398,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Frosinone",
+    "name": "Calò",
+    "player_id": 312,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Frosinone",
+    "name": "Ghedjemis",
+    "player_id": 487,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Frosinone",
+    "name": "Schimd",
+    "player_id": 316,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Frosinone",
+    "name": "Kvernadze",
+    "player_id": 497,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Frosinone",
+    "name": "Masini",
+    "player_id": 404,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Frosinone",
+    "name": "Raimondo",
+    "player_id": 481,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Frosinone",
+    "name": "Bobcek",
+    "player_id": 485,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Genoa",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Genoa",
+    "name": "Bijlow",
+    "player_id": 14,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Genoa",
+    "name": "Marcandalli",
+    "player_id": 133,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Genoa",
+    "name": "Ostigard",
+    "player_id": 81,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Genoa",
+    "name": "Vasquez",
+    "player_id": 88,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Genoa",
+    "name": "Ehizibue",
+    "player_id": 192,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Genoa",
+    "name": "Frendrup",
+    "player_id": 326,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Genoa",
+    "name": "Sow",
+    "player_id": 335,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Genoa",
+    "name": "Baldanzi",
+    "player_id": 283,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Genoa",
+    "name": "Ellertsson",
+    "player_id": 348,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Genoa",
+    "name": "Mitaj",
+    "player_id": 173,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Genoa",
+    "name": "Amorim",
+    "player_id": 382,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Genoa",
+    "name": "Messias",
+    "player_id": 383,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Genoa",
+    "name": "Colombo",
+    "player_id": 476,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Genoa",
+    "name": "Osmajic",
+    "player_id": 490,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Genoa",
+    "name": "Vitinha",
+    "player_id": 488,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Inter",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Inter",
+    "name": "Martinez",
+    "player_id": 3,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Inter",
+    "name": "Bisseck",
+    "player_id": 78,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Inter",
+    "name": "Akanji",
+    "player_id": 70,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Inter",
+    "name": "Bastoni",
+    "player_id": 72,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Inter",
+    "name": "Stones",
+    "player_id": 79,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Inter",
+    "name": "Diouf",
+    "player_id": 296,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Inter",
+    "name": "Barella",
+    "player_id": 263,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Inter",
+    "name": "Calhanoglu",
+    "player_id": 255,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Inter",
+    "name": "Jones",
+    "player_id": 278,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Inter",
+    "name": "Dimarco",
+    "player_id": 65,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Inter",
+    "name": "Spence",
+    "player_id": 83,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Inter",
+    "name": "Zielinski",
+    "player_id": 275,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Inter",
+    "name": "Thuram",
+    "player_id": 448,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Inter",
+    "name": "Lautaro",
+    "player_id": 447,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Inter",
+    "name": "Pio Esposito",
+    "player_id": 461,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Inter",
+    "name": "Lautaro Martinez",
+    "player_id": 447,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Juventus",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Juventus",
+    "name": "Vicario",
+    "player_id": 4,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Juventus",
+    "name": "Kalulu",
+    "player_id": 73,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Juventus",
+    "name": "Bremer",
+    "player_id": 68,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Juventus",
+    "name": "Lucumì",
+    "player_id": 107,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Juventus",
+    "name": "Celik",
+    "player_id": 93,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Juventus",
+    "name": "Kelly",
+    "player_id": 155,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Juventus",
+    "name": "Cambiaso",
+    "player_id": 94,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Juventus",
+    "name": "Douglas Luiz",
+    "player_id": 386,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Juventus",
+    "name": "Sarr",
+    "player_id": 338,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Juventus",
+    "name": "Conceicao",
+    "player_id": 270,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Juventus",
+    "name": "McKennie",
+    "player_id": 265,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Juventus",
+    "name": "Gonzalez",
+    "player_id": 279,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Juventus",
+    "name": "Koopmeiners",
+    "player_id": 327,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Juventus",
+    "name": "Alajbegovic",
+    "player_id": 284,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Juventus",
+    "name": "Locatelli",
+    "player_id": 298,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Juventus",
+    "name": "Kolo Muani",
+    "player_id": 451,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Juventus",
+    "name": "Woltemade",
+    "player_id": 453,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Juventus",
+    "name": "Yildiz",
+    "player_id": 455,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lazio",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Lazio",
+    "name": "Mandas",
+    "player_id": 11,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lazio",
+    "name": "Marusic",
+    "player_id": 137,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lazio",
+    "name": "Doekhi",
+    "player_id": 95,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lazio",
+    "name": "Provstgaard",
+    "player_id": 175,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lazio",
+    "name": "Tavares",
+    "player_id": 114,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Lazio",
+    "name": "Floriani",
+    "player_id": 176,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Lazio",
+    "name": "Sutalo",
+    "player_id": 121,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Lazio",
+    "name": "Pedraza",
+    "player_id": 136,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lazio",
+    "name": "Frattesi",
+    "player_id": 291,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lazio",
+    "name": "Rovella",
+    "player_id": 328,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lazio",
+    "name": "Taylor",
+    "player_id": 271,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Lazio",
+    "name": "Gudmundsson",
+    "player_id": 274,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Lazio",
+    "name": "Pinamonti",
+    "player_id": 474,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lazio",
+    "name": "Zaccagni",
+    "player_id": 267,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lazio",
+    "name": "Isaksen",
+    "player_id": 301,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lecce",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Lecce",
+    "name": "Falcone",
+    "player_id": 15,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lecce",
+    "name": "Danilo Veiga",
+    "player_id": 138,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Lecce",
+    "name": "Gaspar",
+    "player_id": 156,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Lecce",
+    "name": "Tiago Gabriel",
+    "player_id": 96,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lecce",
+    "name": "Gallo",
+    "player_id": 139,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lecce",
+    "name": "Coulibaly",
+    "player_id": 329,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Lecce",
+    "name": "Ilic",
+    "player_id": 439,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lecce",
+    "name": "Berisha",
+    "player_id": 389,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Lecce",
+    "name": "Ngom",
+    "player_id": 388,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lecce",
+    "name": "Gandelman",
+    "player_id": 390,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lecce",
+    "name": "Pierotti",
+    "player_id": 350,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lecce",
+    "name": "Geubbels",
+    "player_id": 489,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lecce",
+    "name": "Monteiro",
+    "player_id": 337,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Lecce",
+    "name": "Stulic",
+    "player_id": 499,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Lecce",
+    "name": "Fatah",
+    "player_id": 520,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Milan",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Milan",
+    "name": "Maignan",
+    "player_id": 6,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Milan",
+    "name": "Gila",
+    "player_id": 75,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Milan",
+    "name": "Gabbia",
+    "player_id": 115,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Milan",
+    "name": "Pavlovic",
+    "player_id": 74,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Milan",
+    "name": "De Winter",
+    "player_id": 157,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Milan",
+    "name": "Moreira",
+    "player_id": 287,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Milan",
+    "name": "Modric",
+    "player_id": 276,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Milan",
+    "name": "Musah",
+    "player_id": 408,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Milan",
+    "name": "Bartesaghi",
+    "player_id": 97,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Milan",
+    "name": "Rabiot",
+    "player_id": 259,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Milan",
+    "name": "Loftus-Cheek",
+    "player_id": 392,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Milan",
+    "name": "Chukwueze",
+    "player_id": 313,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Milan",
+    "name": "Pulisic",
+    "player_id": 258,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Milan",
+    "name": "Ramos",
+    "player_id": 450,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Milan",
+    "name": "Saelemaekers",
+    "player_id": 285,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Milan",
+    "name": "Cisse",
+    "player_id": 374,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Monza",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Monza",
+    "name": "Tornqvist",
+    "player_id": 30,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Monza",
+    "name": "Kouadio",
+    "player_id": 201,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Monza",
+    "name": "Lucchesi",
+    "player_id": 200,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Monza",
+    "name": "Carboni",
+    "player_id": 202,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Monza",
+    "name": "Ziolkowski",
+    "player_id": 248,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Monza",
+    "name": "Birindelli",
+    "player_id": 178,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Monza",
+    "name": "Folorunsho",
+    "player_id": 393,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Monza",
+    "name": "Akinsanmiro",
+    "player_id": 330,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Monza",
+    "name": "Mangas",
+    "player_id": 116,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Monza",
+    "name": "Pessina",
+    "player_id": 351,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Monza",
+    "name": "Ngonge",
+    "player_id": 505,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Monza",
+    "name": "Zeballos",
+    "player_id": 502,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Monza",
+    "name": "Varela",
+    "player_id": 493,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Monza",
+    "name": "Colpani",
+    "player_id": 302,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Monza",
+    "name": "Mota",
+    "player_id": 510,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Monza",
+    "name": "Cutrone",
+    "player_id": 482,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Napoli",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Napoli",
+    "name": "Meret",
+    "player_id": 8,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Napoli",
+    "name": "Di Lorenzo",
+    "player_id": 80,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Napoli",
+    "name": "Rrahmani",
+    "player_id": 71,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Napoli",
+    "name": "Rafa Marin",
+    "player_id": 227,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Napoli",
+    "name": "Spinazzola",
+    "player_id": 98,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Napoli",
+    "name": "Badiashile",
+    "player_id": 120,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Napoli",
+    "name": "Olivera",
+    "player_id": 158,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Napoli",
+    "name": "De Bruyne",
+    "player_id": 266,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Napoli",
+    "name": "Lobotka",
+    "player_id": 314,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Napoli",
+    "name": "McTominay",
+    "player_id": 256,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Napoli",
+    "name": "Anguissa",
+    "player_id": 292,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Napoli",
+    "name": "Politano",
+    "player_id": 303,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Napoli",
+    "name": "Hojlund",
+    "player_id": 449,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Napoli",
+    "name": "Alisson Santos",
+    "player_id": 466,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Napoli",
+    "name": "Vergara",
+    "player_id": 293,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Napoli",
+    "name": "Neres",
+    "player_id": 500,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Parma",
+    "name": "Corvi",
+    "player_id": 25,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Daffara",
+    "player_id": 18,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Ghidotti",
+    "player_id": 63,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Delprato",
+    "player_id": 99,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Troilo",
+    "player_id": 203,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Diego Carlos",
+    "player_id": 105,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Drobnic",
+    "player_id": 237,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Ndiaye",
+    "player_id": 228,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Valenti",
+    "player_id": 179,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Britschgi",
+    "player_id": 204,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Bernabè",
+    "player_id": 331,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Keita M.",
+    "player_id": 368,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Valeri",
+    "player_id": 100,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Carboni F.",
+    "player_id": 247,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Fabbian",
+    "player_id": 379,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Cremaschi",
+    "player_id": 423,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Konate A.",
+    "player_id": null,
+    "status": "unmatched",
+    "note": "No exact canonical name or reviewed alias."
+  },
+  {
+    "club": "Parma",
+    "name": "Ordonez C.",
+    "player_id": 411,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Diallo O.",
+    "player_id": 412,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Sierro",
+    "player_id": 445,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Tourè E.",
+    "player_id": 479,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Lontani",
+    "player_id": 524,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Romero D.",
+    "player_id": 480,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Elphege",
+    "player_id": 523,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Almqvist",
+    "player_id": 394,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Frigan",
+    "player_id": 514,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Parma",
+    "name": "Nicolussi Caviglia",
+    "player_id": 352,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Roma",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Roma",
+    "name": "Svilar",
+    "player_id": 1,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Roma",
+    "name": "Mancini",
+    "player_id": 69,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Roma",
+    "name": "N'Dicka",
+    "player_id": 76,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Roma",
+    "name": "Hermoso",
+    "player_id": 82,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Roma",
+    "name": "Molina",
+    "player_id": 67,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Roma",
+    "name": "Koné",
+    "player_id": 294,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Roma",
+    "name": "Cristante",
+    "player_id": 304,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Roma",
+    "name": "Wesley",
+    "player_id": 66,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Roma",
+    "name": "Pellegrini",
+    "player_id": 307,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Roma",
+    "name": "Dybala",
+    "player_id": 462,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Roma",
+    "name": "Mora",
+    "player_id": 261,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Roma",
+    "name": "Malen",
+    "player_id": 446,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Roma",
+    "name": "Soulè",
+    "player_id": 471,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Roma",
+    "name": "Castro",
+    "player_id": 468,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Sassuolo",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Sassuolo",
+    "name": "Muric",
+    "player_id": 17,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Sassuolo",
+    "name": "Van der Brempt",
+    "player_id": 217,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Sassuolo",
+    "name": "Idzes",
+    "player_id": 117,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Sassuolo",
+    "name": "Caleta-Car",
+    "player_id": 148,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Sassuolo",
+    "name": "Obrador",
+    "player_id": 144,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Sassuolo",
+    "name": "Cinquegrano",
+    "player_id": 234,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Sassuolo",
+    "name": "Leysen",
+    "player_id": 146,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Sassuolo",
+    "name": "Doig",
+    "player_id": 160,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Sassuolo",
+    "name": "Thorstvedt",
+    "player_id": 295,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Sassuolo",
+    "name": "Matic",
+    "player_id": 353,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Sassuolo",
+    "name": "Adzic",
+    "player_id": 354,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Sassuolo",
+    "name": "Bakola",
+    "player_id": 355,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Sassuolo",
+    "name": "Berardi",
+    "player_id": 457,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Sassuolo",
+    "name": "Esposito",
+    "player_id": 472,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Sassuolo",
+    "name": "Laurientè",
+    "player_id": 464,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Sassuolo",
+    "name": "Bowie",
+    "player_id": 483,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Torino",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Torino",
+    "name": "Perri",
+    "player_id": 13,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Torino",
+    "name": "Comuzzo",
+    "player_id": 102,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Torino",
+    "name": "Coco",
+    "player_id": 118,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Torino",
+    "name": "Comert",
+    "player_id": 182,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Torino",
+    "name": "Ismajli",
+    "player_id": 119,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Torino",
+    "name": "Belghali",
+    "player_id": 122,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Torino",
+    "name": "Mandragora",
+    "player_id": 311,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Torino",
+    "name": "Fitz-Jim",
+    "player_id": 369,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Torino",
+    "name": "Cacciamani",
+    "player_id": 356,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Torino",
+    "name": "Patterson",
+    "player_id": 164,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Torino",
+    "name": "Fortini",
+    "player_id": 145,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Torino",
+    "name": "Gineitis",
+    "player_id": 370,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Torino",
+    "name": "Casadei",
+    "player_id": 306,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Torino",
+    "name": "Vlasic",
+    "player_id": 272,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Torino",
+    "name": "Simeone",
+    "player_id": 469,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Torino",
+    "name": "Braganca",
+    "player_id": 361,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Torino",
+    "name": "Adams",
+    "player_id": 478,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Udinese",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Udinese",
+    "name": "Okoye",
+    "player_id": 12,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Udinese",
+    "name": "Palma",
+    "player_id": 206,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Udinese",
+    "name": "Kabasele",
+    "player_id": 183,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Udinese",
+    "name": "Solet",
+    "player_id": 77,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Udinese",
+    "name": "Abankwah",
+    "player_id": 230,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Udinese",
+    "name": "Vojvoda",
+    "player_id": 89,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Udinese",
+    "name": "Piotrowski",
+    "player_id": 358,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Udinese",
+    "name": "Karlstrom",
+    "player_id": 333,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Udinese",
+    "name": "Kamara",
+    "player_id": 90,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Udinese",
+    "name": "Miller",
+    "player_id": 397,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Udinese",
+    "name": "Unai Gomez",
+    "player_id": 334,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Udinese",
+    "name": "Zaniolo",
+    "player_id": 264,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Udinese",
+    "name": "Ekkelenkamp",
+    "player_id": 277,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Udinese",
+    "name": "Davis",
+    "player_id": 458,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Venezia",
+    "name": null,
+    "player_id": null,
+    "status": "club",
+    "note": null
+  },
+  {
+    "club": "Venezia",
+    "name": "Stankovic",
+    "player_id": 19,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Venezia",
+    "name": "Schingtienne",
+    "player_id": 209,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Venezia",
+    "name": "Bella-Kotchap",
+    "player_id": 161,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Venezia",
+    "name": "Juan Jesus",
+    "player_id": 191,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Venezia",
+    "name": "Halhal",
+    "player_id": 208,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Venezia",
+    "name": "Mazzocchi",
+    "player_id": 246,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Venezia",
+    "name": "Kike Perez",
+    "player_id": 373,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Venezia",
+    "name": "Busio",
+    "player_id": 371,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Venezia",
+    "name": "Basic",
+    "player_id": 359,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Venezia",
+    "name": "Haps",
+    "player_id": 163,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Venezia",
+    "name": "Hainaut",
+    "player_id": 188,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Venezia",
+    "name": "Sohm",
+    "player_id": 372,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Venezia",
+    "name": "Correia",
+    "player_id": 162,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Venezia",
+    "name": "Yeboah",
+    "player_id": 484,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Venezia",
+    "name": "Akor Adams",
+    "player_id": 477,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Venezia",
+    "name": "Rrahmani",
+    "player_id": 494,
+    "status": "matched",
+    "note": "Reviewed alias"
+  },
+  {
+    "club": "Venezia",
+    "name": "Adorante",
+    "player_id": 517,
+    "status": "matched",
+    "note": "Exact normalized name and club"
+  },
+  {
+    "club": "Venezia",
+    "name": "Adams",
+    "player_id": 477,
+    "status": "matched",
+    "note": "Reviewed alias"
+  }
+]

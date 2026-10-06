@@ -3,6 +3,23 @@
 Requirements: [prd/README.md](prd/README.md).
 The local database uses PostgreSQL 18 in Docker Compose with persistent storage.
 
+## Local auction app
+
+The FastAPI auction companion uses the current Mantra catalogue and PostgreSQL,
+with persistent sales, squad/budget validation, historical comparisons and dated
+Serie A context. After the database is running:
+
+```bash
+uv sync
+uv run python -m project.web.migrate
+uv run uvicorn project.web.app:app --host 127.0.0.1
+```
+
+Open <http://127.0.0.1:8000> and configure your fantasy teams. All teams have 500
+credits, five goalkeepers, and twenty to twenty-five outfield players. See
+[auction installation, data imports and verification](db/auction-app.md).
+Existing databases need the statistics views from migration 002 before the app.
+
 ## Start
 
 With Docker running and Docker Compose installed:

@@ -1,0 +1,229 @@
+{
+  "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+  "date_convention": "Known observation dates use 12:00 Europe/Rome; publication time is unknown. Undated live pages have null observation dates.",
+  "entries": [
+    {
+      "club": "Atalanta",
+      "fields": {
+        "manager": "Maurizio Sarri"
+      },
+      "source_url": "https://www.atalanta.it/news/atalanta-2026-27-lo-staff-tecnico-di-mister-sarri?appview=true",
+      "observed_at": "2026-07-06T12:00:00+02:00",
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Bologna",
+      "fields": {
+        "manager": "Raffaele Palladino"
+      },
+      "source_url": "https://www.bolognafc.it/nota-del-club-45/",
+      "observed_at": "2026-09-16T12:00:00+02:00",
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Cagliari",
+      "fields": {
+        "manager": "Fabio Pisacane"
+      },
+      "source_url": "https://cagliaricalcio.com/giocatore/fabio-pisacane/",
+      "observed_at": null,
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Como",
+      "fields": {
+        "manager": "Francesc Fabregas Soler"
+      },
+      "source_url": "https://www.legaseriea.it/team/como",
+      "observed_at": null,
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Fiorentina",
+      "fields": {
+        "manager": "Paolo Vanoli"
+      },
+      "source_url": "https://www.legaseriea.it/team/fiorentina",
+      "observed_at": null,
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Frosinone",
+      "fields": {
+        "manager": "Massimiliano Alvini"
+      },
+      "source_url": "https://www.frosinonecalcio.com/conferenza-stampa-post-partita-mister-alvini-41/",
+      "observed_at": "2026-09-12T12:00:00+02:00",
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Genoa",
+      "fields": {
+        "manager": "Daniele De Rossi"
+      },
+      "source_url": "https://genoacfc.it/2026/08/14/il-video-della-conferenza-del-tecnico-de-rossi-prima-di-genoa-ascoli/",
+      "observed_at": "2026-08-14T12:00:00+02:00",
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Inter",
+      "fields": {
+        "manager": "Cristian Chivu"
+      },
+      "source_url": "https://www.inter.it/it/notizie/conferenza-stampa-chivu-vigilia-real-madrid-inter-champions-league-26-27",
+      "observed_at": "2026-09-07T12:00:00+02:00",
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Juventus",
+      "fields": {
+        "manager": "Luciano Spalletti"
+      },
+      "source_url": "https://www.juventus.com/it/news/articoli/le-parole-di-kalulu-e-spalletti-alla-vigilia-di-juventus-nec",
+      "observed_at": "2026-09-16T12:00:00+02:00",
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Lazio",
+      "fields": {
+        "manager": "Gennaro Gattuso"
+      },
+      "source_url": "https://prod.sslazio.it/it/news/eventi/amichevole-or-lazio-arezzo-i-convocati-biancocelesti",
+      "observed_at": null,
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Lecce",
+      "fields": {
+        "manager": "Eusebio Di Francesco"
+      },
+      "source_url": "https://oo.uslecce.it/news/322455375366/la-conferenza-stampa-di-mister-di-francesco-us-lecce",
+      "observed_at": "2026-09-12T12:00:00+02:00",
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Milan",
+      "fields": {
+        "manager": "Rúben Amorim"
+      },
+      "source_url": "https://www.acmilan.com/it/news/articoli/conferenza-stampa/2026-09-19/amorim-vogliamo-giocare-bene-e-vincere-per-i-nostri-tifosi",
+      "observed_at": "2026-09-19T12:00:00+02:00",
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Monza",
+      "fields": {
+        "manager": "Ivan Juric"
+      },
+      "source_url": "https://www.acmonza.com/it/news/la-conferenza-di-mister-juric-prima-di-monza-sassuolo/",
+      "observed_at": "2026-09-17T12:00:00+02:00",
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Napoli",
+      "fields": {
+        "manager": "Massimiliano Allegri"
+      },
+      "source_url": "https://sscnapoli.it/en/massimiliano-allegri-e-il-nuovo-allenatore-del-napoli/",
+      "observed_at": "2026-07-03T12:00:00+02:00",
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Parma",
+      "fields": {
+        "manager": "Alberto Gilardino"
+      },
+      "source_url": "https://www.parmacalcio1913.com/en/main-news/alberto-gilardino-e-il-nuovo-allenatore-del-parma-calcio/",
+      "observed_at": "2026-09-29T12:00:00+02:00",
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Roma",
+      "fields": {
+        "manager": "Gian Piero Gasperini"
+      },
+      "source_url": "https://www.asroma.com/it/notizie/75958/la-conferenza-stampa-di-gasperini-alla-vigilia-di-roma-inter",
+      "observed_at": "2026-09-18T12:00:00+02:00",
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Sassuolo",
+      "fields": {
+        "manager": "Alberto Aquilani"
+      },
+      "source_url": "https://www.sassuolocalcio.it/squadre/prima-squadra-maschile/rosa-e-staff-3/",
+      "observed_at": null,
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Torino",
+      "fields": {
+        "manager": "Ignazio Abate"
+      },
+      "source_url": "https://www.torinofc.it/index.php/news/12/09/2026/incontro-i-media-con-il-tecnico-abate_44719",
+      "observed_at": "2026-09-12T12:00:00+02:00",
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Udinese",
+      "fields": {
+        "manager": "Kosta Runjaic"
+      },
+      "source_url": "https://www.udinese.it/news/squadra/pogon-szczecin-udinese-le-parole-di-runjaic-nel-post-partita",
+      "observed_at": "2026-09-26T12:00:00+02:00",
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Venezia",
+      "fields": {
+        "manager": "Giovanni Stroppa"
+      },
+      "source_url": "https://www.veneziafc.it/news/la-conferenza-stampa-di-giovanni-stroppa-x2811",
+      "observed_at": "2026-09-10T12:00:00+02:00",
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Parma",
+      "fields": {
+        "manager": null,
+        "manager_update": "Carlos Cuesta left the first-team role; club staff took training pending an appointment."
+      },
+      "source_url": "https://www.parmacalcio1913.com/news/nota-del-club-carlos-cuesta/",
+      "observed_at": "2026-09-27T12:00:00+02:00",
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    },
+    {
+      "club": "Parma",
+      "name": "Nicolussi Caviglia",
+      "fields": {
+        "availability": "reported unavailable",
+        "availability_report": "Club reported persistent groin pain and recommended surgery; a return date was not given in this statement."
+      },
+      "source_url": "https://www.parmacalcio1913.com/en/main-news/medical-update-hans-nicolussi-caviglia/",
+      "observed_at": "2026-08-26T12:00:00+02:00",
+      "retrieved_at": "2026-10-06T18:09:55.938872+00:00",
+      "verified": true
+    }
+  ]
+}
