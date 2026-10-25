@@ -6,7 +6,8 @@ def main():
     engine = database_engine(ROOT / '.env')
     try:
         with engine.connect() as conn:
-            conn.exec_driver_sql((ROOT / 'db/init/003_auction.sql').read_text())
+            for migration in ('003_auction.sql', '004_three_goalkeepers.sql', '005_uncapped_squads.sql'):
+                conn.exec_driver_sql((ROOT / 'db/init' / migration).read_text())
             conn.commit()
         print('Auction migration installed. Existing players and performances preserved.')
     finally:

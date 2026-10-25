@@ -16,7 +16,8 @@ uv run uvicorn project.web.app:app --host 127.0.0.1
 ```
 
 Open <http://127.0.0.1:8000> and configure your fantasy teams. All teams have 500
-credits, five goalkeepers, and twenty to twenty-five outfield players. See
+credits and require at least three goalkeepers and twenty outfield players, with
+no squad size limit. See
 [auction installation, data imports and verification](db/auction-app.md).
 Existing databases need the statistics views from migration 002 before the app.
 

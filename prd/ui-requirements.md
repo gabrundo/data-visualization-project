@@ -12,8 +12,8 @@ A simple web app used live during a Fantacalcio Mantra auction. It records every
 
 - Single user, no login or multi-user sync needed in v1.
 - Desktop-first. The layout must still work on a tablet.
-- My budget is 500 credits. My minimum roster is 5 goalkeepers + 20 outfield players; up to 25 outfield players are allowed (25–30 total).
-- Other teams have the same rules (budget 500, 5 goalkeepers, 20–25 outfield players). The number of teams and their names are configurable.
+- My budget is 500 credits. My minimum roster is 3 goalkeepers + 20 outfield players; there is no upper limit on either role group.
+- Other teams have the same rules (budget 500, at least 3 goalkeepers and 20 outfield players, no squad cap). The number of teams and their names are configurable.
 - Prices are whole numbers (credits), minimum 1.
 - Mantra roles are used: Por, Dd, Ds, Dc, B, E, M, C, W, T, A, Pc. A player can have more than one role.
 - "Outfield" means any non-Por player.
@@ -30,7 +30,7 @@ Two-column layout with a top bar.
 |                                          |                   |
 | [ Sale entry bar ]                       | My team           |
 |  Player ___ Team ___ Price ___ [Record]  |  Budget + slots   |
-|                                          |  Por (x/5)        |
+|                                          |  Por (x/3)        |
 | [ Role filter chips ]                    |  Outfield (x/20)  |
 |                                          |                   |
 | [ Available players table ]              | Other teams       |
@@ -44,7 +44,7 @@ Two-column layout with a top bar.
 ### 4.1 Top bar
 
 - Shows my remaining budget, e.g. "Budget: 312 / 500".
-- Shows slots filled, e.g. "Por 2/5 · Outfield 9/20".
+- Shows slots filled, e.g. "Por 2/3 · Outfield 9/20".
 - Undo button reverts the last recorded sale.
 - Settings link (team names, reset auction, export).
 
@@ -66,10 +66,10 @@ Requirements:
 - Validation (inline, blocks submit):
   - Player must exist and be unsold.
   - Price must be at least 1.
-  - The buying team must have a free slot for that player's role group (Por or outfield).
-  - The price must leave enough budget for the buying team to complete its minimum squad at 1 credit each after the proposed purchase. Maximum bid = remaining budget − max(5 − goalkeepers after purchase, 0) − max(20 − outfield after purchase, 0). Optional outfield purchases 21–25 reserve no credits for other optional slots.
+  - Squad sizes are uncapped for both Por and outfield players.
+  - The price must leave enough budget for the buying team to complete its minimum squad at 1 credit each after the proposed purchase. Maximum bid = remaining budget − max(3 − goalkeepers after purchase, 0) − max(20 − outfield after purchase, 0). Purchases beyond either role group’s minimum reserve no credits for additional optional players.
 - If the name I type matches a player who is already sold, show "Already sold to Team X for N" instead of "no match", with an Edit option.
-- If I attempt an invalid sale, show the specific reason (e.g. "Team X has no goalkeeper slots left").
+- If I attempt an invalid sale, show the specific reason (e.g. "Team X must reserve credits for its minimum squad").
 
 ### 4.3 Role filter
 
@@ -102,11 +102,11 @@ Requirements:
 
 - Header: team name, budget left, spent total.
 - Two sections:
-  - **Goalkeepers** (x/5): list of players with price; empty slots shown as placeholders.
-  - **Outfield** (x/20 minimum, x/5 optional): list of players with role(s) and price; empty slots shown as placeholders.
+  - **Goalkeepers** (x/3 minimum): list of players with price; empty slots shown as placeholders.
+  - **Outfield** (x/20 minimum; additional players uncapped): list of players with role(s) and price; empty slots shown as placeholders.
 - Optionally group outfield players by role (Dif, Cen, Att) or sort by role.
 - Clicking a player shows details or offers "Remove" (returns the player to the available pool and refunds budget).
-- Visual warning when budget is tight (e.g. max bid falls below a threshold) or when a role group is full.
+- Visual warning when budget is tight (e.g. max bid falls below a threshold) or the budget is exhausted.
 - Shows "Max bid you can place" as a highlighted number.
 
 ### 4.7 Right sidebar: other teams
@@ -124,7 +124,7 @@ Requirements:
 | Available players | Error loading | Message with Retry |
 | Sale entry | No match | "No available player found. It may already be sold." |
 | My team | Empty | Placeholder slots, full budget shown |
-| My team | Minimum squad complete | Success banner at 5 goalkeepers + 20 outfield players; optional outfield purchases remain available until 25 or budget exhaustion |
+| My team | Minimum squad complete | Success banner at 3 goalkeepers + 20 outfield players; additional purchases in either role group remain available until budget exhaustion |
 | My team | Full role group | Further purchases in that group rejected; show maximum bid zero |
 | Sales log | Empty | "No sales recorded yet" |
 | Save failure | Network/DB error | Toast with Retry; the sale is not shown as recorded until saved |

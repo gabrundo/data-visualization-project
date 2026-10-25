@@ -2,8 +2,8 @@
 
 The local auction app records confirmed purchases in PostgreSQL and uses the
 current Fantacalcio Mantra eligibility catalogue. Each fantasy team has 500
-credits, five mandatory goalkeeper slots, twenty mandatory outfield slots, and
-five optional outfield slots. The minimum purchase price is one credit.
+credits, a minimum of three goalkeepers and twenty outfield players, and no
+upper limit on either role group. The minimum purchase price is one credit.
 
 ## Installation and startup
 
@@ -27,7 +27,10 @@ Keep the listener on loopback for local single-user use.
 001 and 002. Its tables and indexes can also be installed repeatedly on existing
 databases. It adds `fantasy_team`, `auction_settings`, `auction_sale`,
 `auction_request`, `context_snapshot` and `context_entry`; existing player,
-football-club and performance tables remain intact. Back up the database and
+football-club and performance tables remain intact.
+`004_three_goalkeepers.sql` updates existing auctions to three goalkeeper slots;
+`005_uncapped_squads.sql` removes squad caps, using NULL for `maximum_outfield`.
+The migration command applies all three files and preserves all recorded sales. Back up the database and
 source cache using the repository's existing backup instructions.
 
 ## Recording and correcting purchases
@@ -50,14 +53,14 @@ Read responses use a repeatable-read transaction for consistent squads and total
 For a proposed purchase, the maximum bid is:
 
 ```text
-remaining budget − max(5 − goalkeepers after purchase, 0)
+remaining budget − max(3 − goalkeepers after purchase, 0)
                  − max(20 − outfield after purchase, 0)
 ```
 
-An empty team can bid 476 credits. With 5 goalkeepers and 20 outfield players
+An empty team can bid 478 credits. With at least 3 goalkeepers and 20 outfield players
 purchased, the next optional outfield player requires no reserve for other
-optional slots. A sixth goalkeeper or twenty-sixth outfield player is rejected.
-The UI announces minimum completion at 5 + 20 and permits optional purchases.
+optional slots. Additional goalkeepers and outfield players are allowed while
+budget permits. The UI announces minimum completion at 3 + 20.
 
 Each sale-create request includes a UUID idempotency key. The frontend retains
 that key and the form values after an uncertain response. Repeating the same

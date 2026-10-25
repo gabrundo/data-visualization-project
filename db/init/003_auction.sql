@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS auction_settings (
     id integer PRIMARY KEY CHECK (id = 1),
     my_team_id bigint REFERENCES fantasy_team ON DELETE RESTRICT,
     budget integer NOT NULL DEFAULT 500 CHECK (budget = 500),
-    goalkeeper_slots integer NOT NULL DEFAULT 5 CHECK (goalkeeper_slots = 5),
+    goalkeeper_slots integer NOT NULL DEFAULT 3 CHECK (goalkeeper_slots = 3),
     minimum_outfield integer NOT NULL DEFAULT 20 CHECK (minimum_outfield = 20),
     maximum_outfield integer NOT NULL DEFAULT 25 CHECK (maximum_outfield = 25),
     revision bigint NOT NULL DEFAULT 0

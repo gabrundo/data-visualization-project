@@ -22,30 +22,35 @@ def owned(gk=0, out=0, price=1):
 
 class RuleTests(unittest.TestCase):
     def test_budget_and_reserve(self):
-        self.assertEqual(team_summary([])['max_bid_goalkeeper'],476)
-        validate_purchase([], 'outfield',476)
-        with self.assertRaises(ValueError):validate_purchase([], 'outfield',477)
+        self.assertEqual(team_summary([])['max_bid_goalkeeper'],478)
+        validate_purchase([], 'outfield',478)
+        with self.assertRaises(ValueError):validate_purchase([], 'outfield',479)
         for p in (0,-1,1.5,True,'4'):
             with self.assertRaises(ValueError):validate_purchase([], 'outfield',p)
-        sales=owned(4,19);sales[0]['price']=476
+        sales=owned(2,19);sales[0]['price']=478
         validate_purchase(sales,'goalkeeper',1)
         with self.assertRaises(ValueError):validate_purchase(sales,'goalkeeper',2)
 
     def test_role_boundaries_and_optional_reserve(self):
-        validate_purchase(owned(4,20),'goalkeeper',476)
-        with self.assertRaises(ValueError):validate_purchase(owned(5),'goalkeeper',1)
-        validate_purchase(owned(5,19),'outfield',476)
-        minimum=team_summary(owned(5,20))
-        self.assertTrue(minimum['minimum_complete']);self.assertFalse(minimum['complete'])
-        self.assertEqual(minimum['max_bid_outfield'],475)
-        validate_purchase(owned(5,24),'outfield',471)
-        with self.assertRaises(ValueError):validate_purchase(owned(5,25),'outfield',1)
-        self.assertEqual(team_summary(owned(5,25))['max_bid_outfield'],0)
+        validate_purchase(owned(2,20),'goalkeeper',478)
+        validate_purchase(owned(3),'goalkeeper',1)
+        validate_purchase(owned(3,19),'outfield',478)
+        minimum=team_summary(owned(3,20))
+        self.assertTrue(minimum['minimum_complete'])
+        self.assertEqual(minimum['max_bid_outfield'],477)
+        validate_purchase(owned(3,24),'outfield',473)
+        validate_purchase(owned(3,25),'outfield',1)
+        self.assertEqual(team_summary(owned(3,25))['max_bid_outfield'],472)
+        validate_purchase(owned(10,40), 'goalkeeper', 450)
+        validate_purchase(owned(10,40), 'outfield', 450)
+        self.assertTrue(team_summary(owned(10,40))['minimum_complete'])
+        with self.assertRaises(ValueError):validate_purchase(owned(10,40), 'outfield', 451)
+        with self.assertRaises(ValueError):validate_purchase(owned(3,497), 'goalkeeper', 1)
 
     def test_optional_purchase_with_missing_goalkeepers(self):
-        self.assertEqual(team_summary(owned(0,20))['max_bid_outfield'],475)
-        validate_purchase(owned(0,20),'outfield',475)
-        with self.assertRaises(ValueError):validate_purchase(owned(0,20),'outfield',476)
+        self.assertEqual(team_summary(owned(0,20))['max_bid_outfield'],477)
+        validate_purchase(owned(0,20),'outfield',477)
+        with self.assertRaises(ValueError):validate_purchase(owned(0,20),'outfield',478)
 
     def test_weights_missing_samples_newcomer(self):
         history=[dict(performance_season=2025,season_weighted_score=6,coverage_status='complete'),dict(performance_season=2024,season_weighted_score=4,coverage_status='complete'),dict(performance_season=2023,season_weighted_score=2,coverage_status='complete')]
@@ -85,7 +90,7 @@ class AuctionAPITests(unittest.TestCase):
         cls.engine=create_engine(cls.admin.url,connect_args={'options':f'-csearch_path={cls.schema}'},hide_parameters=True)
         cls.addClassCleanup(cls.cleanup_schema)
         with cls.engine.connect() as conn:
-            for f in ['001_schema.sql','002_player_metrics.sql','003_auction.sql']:
+            for f in ['001_schema.sql','002_player_metrics.sql','003_auction.sql','004_three_goalkeepers.sql','005_uncapped_squads.sql']:
                 conn.exec_driver_sql((ROOT/'db/init'/f).read_text())
             conn.commit()
         cls.seed()
@@ -130,11 +135,11 @@ class AuctionAPITests(unittest.TestCase):
 
     def test_budget_invalid_prices_and_rollback(self):
         before=self.client.get('/api/state').json()
-        self.assertEqual(self.purchase(price=477).status_code,409)
+        self.assertEqual(self.purchase(price=479).status_code,409)
         for p in (0,1.5,True):self.assertEqual(self.purchase(price=p).status_code,422)
         self.assertEqual(before,self.client.get('/api/state').json())
-        result=self.purchase(price=476);self.assertEqual(result.status_code,200,result.text)
-        self.assertEqual(result.json()['teams'][0]['remaining_budget'],24)
+        result=self.purchase(price=478);self.assertEqual(result.status_code,200,result.text)
+        self.assertEqual(result.json()['teams'][0]['remaining_budget'],22)
         self.assertEqual(self.purchase(player=14,price=2).status_code,409)
         self.assertEqual(self.purchase(player=14).status_code,200)
 
@@ -149,43 +154,43 @@ class AuctionAPITests(unittest.TestCase):
 
     def test_edit_transfer_refund_and_undo_newest_recorded(self):
         first=self.purchase(price=100).json()['sales'][0];second=self.purchase(player=14,price=10).json()['sales'][0]
-        result=self.client.put(f"/api/sales/{first['id']}",json=dict(player_id=13,buyer_id=2,price=476))
+        result=self.client.put(f"/api/sales/{first['id']}",json=dict(player_id=13,buyer_id=2,price=478))
         self.assertEqual(result.status_code,200,result.text)
         self.assertEqual(result.json()['teams'][0]['remaining_budget'],490)
         failed=self.client.put(f"/api/sales/{second['id']}",json=dict(player_id=14,buyer_id=2,price=2))
         self.assertEqual(failed.status_code,409)
-        same=self.client.put(f"/api/sales/{first['id']}",json=dict(player_id=13,buyer_id=2,price=476));self.assertEqual(same.status_code,200)
+        same=self.client.put(f"/api/sales/{first['id']}",json=dict(player_id=13,buyer_id=2,price=478));self.assertEqual(same.status_code,200)
         result=self.client.post('/api/undo').json();self.assertEqual([s['id'] for s in result['sales']],[first['id']])
         self.client.delete(f"/api/sales/{first['id']}")
         self.assertEqual(self.client.get('/api/state').json()['teams'][1]['remaining_budget'],500)
         self.assertEqual(self.client.post('/api/undo').status_code,409)
 
-    def test_role_group_limits(self):
-        for p in range(1,6):self.assertEqual(self.purchase(player=p).status_code,200)
-        self.assertEqual(self.purchase(player=6).status_code,409)
+    def test_uncapped_role_groups(self):
+        for p in range(1,4):self.assertEqual(self.purchase(player=p).status_code,200)
+        self.assertEqual(self.purchase(player=4).status_code,200)
         for p in range(13,33):self.assertEqual(self.purchase(player=p).status_code,200)
-        summary=self.client.get('/api/state').json()['teams'][0];self.assertTrue(summary['minimum_complete']);self.assertFalse(summary['complete'])
+        summary=self.client.get('/api/state').json()['teams'][0];self.assertTrue(summary['minimum_complete'])
         for p in range(33,38):self.assertEqual(self.purchase(player=p).status_code,200)
-        self.assertEqual(self.purchase(player=38).status_code,409)
-        self.assertTrue(self.client.get('/api/state').json()['teams'][0]['complete'])
+        self.assertEqual(self.purchase(player=38).status_code,200)
+        self.assertTrue(self.client.get('/api/state').json()['teams'][0]['minimum_complete'])
 
-    def test_transfer_to_full_group_and_same_team_edit(self):
-        for player in range(1,6):
+    def test_transfer_beyond_former_cap_and_same_team_edit(self):
+        for player in range(1,4):
             self.assertEqual(self.purchase(player=player,buyer=2).status_code,200)
-        sale=self.purchase(player=6,buyer=1,price=10).json()['sales'][0]
+        sale=self.purchase(player=4,buyer=1,price=10).json()['sales'][0]
         before=self.client.get('/api/state').json()
-        result=self.client.put(f"/api/sales/{sale['id']}",json=dict(player_id=6,buyer_id=2,price=1))
-        self.assertEqual(result.status_code,409)
-        self.assertEqual(self.client.get('/api/state').json(),before)
-        result=self.client.put(f"/api/sales/{sale['id']}",json=dict(player_id=6,buyer_id=1,price=476))
+        result=self.client.put(f"/api/sales/{sale['id']}",json=dict(player_id=4,buyer_id=2,price=1))
         self.assertEqual(result.status_code,200,result.text)
-        self.assertEqual(result.json()['teams'][0]['remaining_budget'],24)
-        other=self.client.put(f"/api/sales/{sale['id']}",json=dict(player_id=7,buyer_id=1,price=1))
+        self.assertEqual(result.json()['teams'][1]['goalkeepers'],4)
+        result=self.client.put(f"/api/sales/{sale['id']}",json=dict(player_id=4,buyer_id=1,price=478))
+        self.assertEqual(result.status_code,200,result.text)
+        self.assertEqual(result.json()['teams'][0]['remaining_budget'],22)
+        other=self.client.put(f"/api/sales/{sale['id']}",json=dict(player_id=5,buyer_id=1,price=1))
         self.assertEqual(other.status_code,409)
 
     def test_concurrent_requests_serialize_budget_and_duplicates(self):
         with ThreadPoolExecutor(max_workers=2) as pool:
-            statuses=list(pool.map(lambda p:self.purchase(player=p,price=476).status_code,[13,14]))
+            statuses=list(pool.map(lambda p:self.purchase(player=p,price=478).status_code,[13,14]))
         self.assertEqual(sorted(statuses),[200,409])
         self.client.post('/api/reset',json=dict(confirmation='RESET',revision=self.client.get('/api/state').json()['settings']['revision']))
         key=str(uuid4())
@@ -218,6 +223,38 @@ class AuctionAPITests(unittest.TestCase):
             c.exec_driver_sql((ROOT/'db/init/003_auction.sql').read_text());c.commit()
             self.assertEqual(c.execute(text('SELECT count(*) FROM player_fixture_performance')).scalar(),before)
             self.assertEqual(c.execute(text('SELECT count(*) FROM player')).scalar(),100)
+
+    def test_existing_five_keeper_settings_upgrade_preserves_sales(self):
+        self.purchase(player=1,price=10)
+        before=self.client.get('/api/state').json()
+        with self.engine.begin() as c:
+            c.execute(text('ALTER TABLE auction_settings DROP CONSTRAINT auction_settings_goalkeeper_slots_check'))
+            c.execute(text('UPDATE auction_settings SET goalkeeper_slots=5'))
+            c.execute(text('ALTER TABLE auction_settings ADD CONSTRAINT auction_settings_goalkeeper_slots_check CHECK (goalkeeper_slots=5)'))
+        with self.engine.connect() as c:
+            c.exec_driver_sql((ROOT/'db/init/004_three_goalkeepers.sql').read_text());c.commit()
+            c.exec_driver_sql((ROOT/'db/init/004_three_goalkeepers.sql').read_text());c.commit()
+        after=self.client.get('/api/state').json()
+        self.assertEqual(after['settings']['goalkeeper_slots'],3)
+        self.assertEqual(after['settings']['revision'],before['settings']['revision']+1)
+        self.assertEqual(after['sales'],before['sales'])
+        self.assertEqual(after['teams'],before['teams'])
+
+    def test_uncapped_migration_preserves_sales_and_is_repeatable(self):
+        self.purchase(player=1,price=10)
+        before=self.client.get('/api/state').json()
+        with self.engine.begin() as c:
+            c.execute(text('ALTER TABLE auction_settings DROP CONSTRAINT auction_settings_maximum_outfield_check'))
+            c.execute(text('UPDATE auction_settings SET maximum_outfield=25'))
+            c.execute(text('ALTER TABLE auction_settings ADD CONSTRAINT auction_settings_maximum_outfield_check CHECK (maximum_outfield=25)'))
+        with self.engine.connect() as c:
+            for _ in range(2):
+                c.exec_driver_sql((ROOT/'db/init/005_uncapped_squads.sql').read_text());c.commit()
+        after=self.client.get('/api/state').json()
+        self.assertIsNone(after['settings']['maximum_outfield'])
+        self.assertEqual(after['settings']['revision'],before['settings']['revision']+1)
+        self.assertEqual(after['sales'],before['sales'])
+        self.assertEqual(after['teams'],before['teams'])
 
     def test_context_preserved_and_unresolved_reported(self):
         with tempfile.TemporaryDirectory() as directory:
